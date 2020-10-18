@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".Bill.AddBillActivity">
+
+    <Spinner
+
+        android:id="@+id/spnbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+
+
+    <EditText
+        android:onClick="Datepicker"
+        android:hint="Ngày mua"
+        android:padding="10dp"
+        android:id="@+id/tvdate"
+        android:text="25-12-2020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+
+    <EditText
+        android:hint="Số Lượng"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtsoluonghoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:onClick="Addhoadon"
+        android:textColor="#eeeeee"
+        android:background="#4ABF4E"
+        android:text="Them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+    <ListView
+        android:id="@+id/lvthemhadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#4ABF4E"
+        android:id="@+id/tvthanhtien"
+        android:text="Thành tiền:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="#eeeeee"
+            android:background="#4ABF4E"
+            android:layout_marginLeft="50dp"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:textColor="#eeeeee"
+            android:background="#4ABF4E"
+            android:layout_marginLeft="50dp"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</LinearLayout>
